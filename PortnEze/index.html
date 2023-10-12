@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Ezequiel</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/ft.jpeg" alt="">
+            </div>
+            <h1>Ezequiel Silva</h1>
+            <h2>Desarrollador Frontend-React</h2>
+            <div class="redes">
+                <a href="https://github.com/821mss"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+                <a href="https://www.linkedin.com/in/mario-silva-663595263/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Ezequiel Silva.</span> ¡Hola! Soy Mario Ezequiel Silva😄, un apasionado Frontend
+                Developer con experiencia en la creación de aplicaciones web y altamente funcionales utilizando
+                tecnologías modernas como React JS y CSS. </p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            02-07-2004
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +54 011 620 15468
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            silvaeze21@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Dardo rocha 1982, Buenos aires, Rafael Calzada
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button>
+                 <a href="Minimal Weekly Schedule Planner (2).pdf" download="CV" id="CV">Descargar CV</a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React JS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Tailwind CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Tecnicatura en Electronica </h4>
+                        <span class="casa">E.E.S.T.N°5 "2 DE ABRIL LOMAS DE ZAMORA"</span>
+                        <span class="fecha">2017 - 2023</span>
+                        <p>Soy un apasionado estudiante de una escuela técnica con orientación en electrónica, donde he
+                            desarrollado proyectos innovadores que demuestran mi fuerte interés en la tecnología.
+                            Trabaje en una cerradura con reconocimiento facial basada en ESP32, que combina mi
+                            conocimiento en electrónica con la seguridad moderna.Además de este proyecto, me encuentro
+                            trabajando en la construcción de una impresora 3D y un mini CNC, utilizando el
+                            microcontrolador Arduino UNO. Estas experiencias me han proporcionado un amplio conjunto de
+                            habilidades, desde la programación de microcontroladores hasta el diseño de circuitos
+                            electrónicos, y me han permitido explorar el emocionante mundo de la fabricación digital.
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollo Web</h4>
+                        <span class="casa">Educacion autodidactica</span>
+                        <span class="fecha">Noviembre 2022- Febrero 2023</span>
+                        <p>Desde noviembre de 2022 hasta febrero de 2023, he estado inmerso en el emocionante mundo del
+                            desarrollo web, donde he adquirido habilidades en HTML, CSS y JavaScript. Durante este
+                            período, he explorado y aprendido de manera activa estos lenguajes de programación, lo que
+                            me ha permitido crear sitios web y aplicaciones interactivas. Estoy emocionado por las
+                            oportunidades que esta experiencia me ha brindado y por las perspectivas que se abren en el
+                            campo del desarrollo web.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>FrameWork React JS y Tailwind CSS</h4>
+                        <span class="casa">Educacion autodidactica</span>
+                        <span class="fecha">2023 - Actualidad</span>
+                        <p>Además, actualmente continúo mi formación en desarrollo web y estoy enfocado en aprender
+                            React JS, una biblioteca de JavaScript. Además, sigo estudiando Tailwind CSS, una
+                            herramienta de diseño de utilidad que simplifica el proceso de diseño web al mismo tiempo
+                            que lo optimiza.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Fiver</span>
+                        <span class="fecha">2023 - Actualidad</span>
+                        <p>Desarrollo de Ecommerce con HTML, CSS y JavaScript. Esta web fue diseñada por la
+                            especificaciones del cliente, en la cual e integrado como pasarela de pagos STRIPE.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa"></span>
+                        <span class="fecha">2023 - Actualidad</span>
+                        <p> Actualmente me encuentro desarrollando y diseñando una Landin Page para un instituto de
+                            ingles</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Captura de pantalla 2023-08-20 195734.png" alt="">
+                    <div class="overlay">
+                        <h3>Ecommerce</h3>
+                        <p>frontend y backend</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/SponsorDios.png" alt="">
+                    <div class="overlay">
+                        <h3>Ecommerce</h3>
+                        <p>Frontend</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Captura de pantalla 2023-08-20 205333.png" alt="">
+                    <div class="overlay">
+                        <h3>Lading Page</h3>
+                        <p>Frontend</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/821mss"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+            <a href="https://www.linkedin.com/in/mario-silva-663595263/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/130625853a.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
